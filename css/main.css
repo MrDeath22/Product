@@ -1,16 +1,18 @@
 :root {
    --bg-color: #fff;
-   --text-color: #3d2a22;
+   --text-color: #22343D;
    --item-btn-color: #f3f3f3;
+   --bg-gray: #f5f5f5;
  }
  
  body {
    font-family: 'Poppins', sans-serif;
+   color: var(--text-color);
    background-color: var(--bg-color);
  }
 
 .hero {
-   background-color: #fff;
+   background-color: var(--bg-color);
  }
  .site-header {
    padding: 20px 0;
@@ -71,7 +73,7 @@
  .btn:hover {
    border-color: #02897a;
    background-color:#02897a;
-   color: #fff;
+   color: var(--bg-color);
  }
  
  
@@ -161,6 +163,9 @@
  }
  
  @media screen and (max-width: 1200px) {
+   .hero__header {
+      box-shadow: 0px -2px 8px rgba(0, 0, 0, 0.25);
+   }
    .site-nav {
      position: fixed;
      display: flex;
@@ -172,7 +177,8 @@
      height: 100vh;
      background-color: #01ac98;
      transform: translateX(100%);
-     transition:transform 0.4s ease ;
+     transition:transform 0.4s ease;
+     z-index: 1;
    }
    .show {
      transform: translateX(0%);
@@ -192,7 +198,7 @@
    .nav-link {
      font-size: 25px;
      display: inline-block;
-     color: #fff;
+     color: var(--bg-color);
    }
  
    .site-menu {
@@ -501,6 +507,7 @@
 }
 
 .easy__bg {
+   height: 520px;
    transform: rotateZ(180deg);
    bottom: 30%;
 }
@@ -536,7 +543,7 @@
    padding: 16px 25px;
    margin: 0 16px;
    border-radius: 26.5px;
-   background: #FFFFFF;
+   background: var(--bg-color);
    box-shadow: 0px 2px 8px rgba(86, 117, 146, 0.1);
 }
 
@@ -672,3 +679,324 @@
    }
 }
 
+
+/* -------Card-section-------- */
+
+
+.card__inner {
+   padding: 50px 0;
+}
+
+.card__title {
+   font-size: 34px;
+   margin-bottom: 16px;
+}
+
+.card__desc {
+   font-weight: 500;
+   margin-bottom: 50px;
+}
+
+.card__item {
+   padding: 32px 0;
+   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+   border-radius: 8px;
+}
+
+.card__item--active {
+   color: var(--bg-color);
+   background: #02897A;
+}
+
+.card__item--active .card__item-price {
+   color: var(--bg-color);
+}
+
+.card__item-title {
+   font-size: 24px;
+   margin-bottom: 12px;
+}
+
+.card__item-desc {
+   font-size: 16px;
+   margin-bottom: 24px;
+}
+
+.card__item-price {
+   font-weight: bold;
+   font-size: 76px;
+   letter-spacing: 0.2px;
+   margin-bottom: 40px;
+   color: #02897a;
+}
+
+.card__item-price sup {
+   font-size: 24px;
+   margin-left: 10px;
+   margin-bottom: 5px;
+}
+
+.card__item-price span {
+   position: relative;
+   top: 15px;
+   right: 15px;
+   font-weight: normal;
+   font-size: 16px;
+   color: #AFAFAF;
+}
+
+.card__item-txt {
+   display: block;
+   font-weight: 500;
+   font-size: 16px;
+   margin-bottom: 20px;
+}
+
+.card__item-btn {
+   padding: 8px 18px;
+   margin-top: 22px;
+}
+
+.card__item-btn--active {
+   color: #02897a;
+   background-color: var(--bg-color);
+}
+
+@media screen and (min-width: 320px) {
+   .card__list {
+      display: block;
+      padding: 0 10%;
+   }
+   .card__item {
+      margin-bottom: 30px;
+   }
+}
+
+@media screen and (min-width: 450px) {
+   .card__list {
+      padding: 0 15%;
+   }
+}
+
+@media screen and (min-width: 550px) {
+   .card__list {
+      padding: 0 20%;
+   }
+}
+
+@media screen and (min-width: 750px) {
+   .card__list {
+      padding: 0 25%;
+   }
+}
+
+@media screen and (min-width: 850px) {
+   .card__list {
+      padding: 0 30%;
+   }
+}
+
+@media screen and (min-width: 850px) {
+   .card__list {
+      padding: 0 30%;
+   }
+}
+
+@media screen and (min-width: 990px) {
+   .card__list {
+      display: flex;
+      padding: 0;
+   }
+}
+
+
+/* ------Subs-section------ */
+
+
+#subs {
+   color: var(--bg-color);
+}
+
+.subs__inner {
+   max-width: 970px;
+   padding: 50px;
+   margin: 0 auto;
+   border-radius: 32px;
+   background-color: #02897a;
+}
+
+.subs__titles-desc {
+   max-width: 460px;
+   font-weight: 600;
+   font-size: 32px;
+   line-height: 151%;
+   margin-bottom: 50px;
+}
+
+.subs__titles-btn {
+   padding: 8px 35px;
+}
+
+.subs__inner-img {
+   width: 370px;
+   height: 350px;
+}
+
+@media screen and (min-width: 320px) {
+   .subs__inner {
+      text-align: center;
+   }
+   .subs__titles-btn {
+      margin-bottom: 30px;
+   }
+   .subs__inner {
+      justify-content: center;
+      padding: 30px 20px;
+      padding-bottom: 0;
+   }
+}
+
+@media screen and (min-width: 480px) {
+   #subs {
+      padding: 0 5%;
+   }
+}
+
+@media screen and (min-width: 550px) {
+   #subs {
+      padding: 0 10%;
+   }
+}
+
+@media screen and (min-width: 850px) {
+   #subs {
+      padding: 0 15%;
+   }
+}
+
+@media screen and (min-width: 1200px) {
+   #subs {
+      padding: 50px 0;
+   }
+   .subs__inner {
+      text-align: start;
+      justify-content: space-between;
+      padding-left: 50px;
+   }
+}
+
+
+/* ------Footer-section------- */
+
+
+#site-footer {
+   padding: 50px 0;
+}
+
+.footer-logo {
+   display: block;
+   margin-bottom: 25px;
+}
+
+.footer__about-link {
+   font-size: 30px;
+   text-align: center;
+   padding: 8px 12px;
+   margin-right: 10px;
+   margin-bottom: 30px;
+   border-radius: 50%;
+   color: #02897A;
+   background: #EDFFFC;
+}
+
+.footer__item {
+   margin-bottom: 32px;
+}
+
+.footer__item-title {
+   display: block;
+   font-weight: 500;
+   font-size: 20px;
+}
+
+.footer__item-link {
+   display: block;
+   font-size: 16px;
+   margin-bottom: 12px;
+   color: #22343D;
+}
+
+.footer__item-desc {
+   max-width: 280px;
+   font-weight: 500;
+   font-size: 20px;
+   line-height: 30px;
+}
+
+.footer__input {
+   width: 325px;
+   height: 48px;
+   display: block;
+   background: var(--bg-color)
+   ;
+   border: 1px solid #BCD0E5;
+   border-radius: 4px;
+}
+
+.footer__btn {
+   padding: 5px 10px;
+}
+
+@media screen and (min-width: 320px) {
+   .footer-about {
+      text-align: center;
+   }
+   .footer__list {
+      text-align: center;
+   }
+   .footer__item-title {
+      margin-bottom: 20px;
+   }
+   .footer__item-desc {
+      margin: 0 auto;
+      margin-bottom: 16px;
+   }
+   .footer__input {
+      margin: 0 auto;
+      margin-bottom: 20px;
+   }
+   .footer__last-desc {
+      text-align: center;
+   }
+}
+
+@media screen and (min-width: 1100px) {
+   .footer-inner {
+      display: flex;
+      justify-content: space-between;
+   }
+   .footer-about {
+      text-align: start;
+   }
+   .footer__list {
+      display: flex;
+      text-align: start;
+   }
+   .footer__item {
+      margin-left: 150px;
+   }
+   .footer__item-title {
+      margin-bottom: 24px;
+   }
+   .footer__item-desc {
+      margin: 0;
+      margin-bottom: 16px;
+   }
+   .footer__input {
+      margin: 0;
+      margin-bottom: 20px;
+   }
+   .footer__last-desc {
+      text-align: center;
+   }
+}
