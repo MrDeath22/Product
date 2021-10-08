@@ -9,13 +9,17 @@
    font-family: 'Poppins', sans-serif;
    color: var(--text-color);
    background-color: var(--bg-color);
+   transition: all 0.4s ease;
  }
 
-.hero {
-   background-color: var(--bg-color);
- }
+ .dark-content {
+   --bg-color: #161c2d;
+   --text-color: #fff;
+   --bg-gray: #22343d;
+}
+
  .site-header {
-   padding: 20px 0;
+   padding: 20px;
  }
  
  .site-header__logo {
@@ -73,15 +77,14 @@
  .btn:hover {
    border-color: #02897a;
    background-color:#02897a;
-   color: var(--bg-color);
+   color: #fff;
  }
- 
  
  
  .btn__green:hover {
    border: 1px solid #bcd0e5;
    background-color:transparent;
-   color: var(--text-color);
+   color: #000;
  }
  .nav-item__btn button {
    display: flex;
@@ -700,16 +703,18 @@
 .card__item {
    padding: 32px 0;
    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+   color: #000;
+   background: #fff;
    border-radius: 8px;
 }
 
 .card__item--active {
-   color: var(--bg-color);
+   color: #fff;
    background: #02897A;
 }
 
 .card__item--active .card__item-price {
-   color: var(--bg-color);
+   color: #fff;
 }
 
 .card__item-title {
@@ -934,9 +939,10 @@
 }
 
 .footer__input {
-   width: 325px;
+   max-width: 325px;
    height: 48px;
    display: block;
+   padding: 0 15px;
    background: var(--bg-color)
    ;
    border: 1px solid #BCD0E5;

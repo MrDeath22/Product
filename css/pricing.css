@@ -1,0 +1,158 @@
+@media screen and (min-width: 320px) {
+   .get__inner {
+      padding-top: 50px;
+      padding-bottom: 100px;
+   }
+   .get__title {
+      font-weight: 600;
+      font-size: 24px;
+      margin-bottom: 32px;
+   }
+   .get__title-two {
+      font-size: 36px;
+      line-height: 60px;
+      margin-bottom: 16px;
+   }
+   .get__desc {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 50px;
+   }
+}
+
+@media screen and (min-width: 552px) {
+   .get__title-two {
+      font-size: 40px;
+   }
+}
+
+
+/* --------Enter-section-------- */
+
+
+@media screen and (min-width: 320px) {
+   #enter {
+      background-color: var(--bg-gray);
+   }
+   .enter__inner {
+      padding: 50px 0;
+   }
+   .enter__btn {
+      padding: 8px 18px;
+   }
+}
+
+
+/* -------Effects-section------- */
+
+
+@media screen and (min-width: 320px) {
+   .effects__inner {
+      padding: 50px 0;
+   }
+   .effects__title {
+      font-size: 32px;
+      margin-bottom: 34px;
+   }
+   .effects__item-img {
+      margin-bottom: 32px;
+   }
+   .effects__item-titles {
+      text-align: start;
+   }
+   .effects__item-title {
+      display: flex;
+      align-items: center;
+      font-weight: 600;
+      font-size: 24px;
+      margin-bottom: 24px;
+   }
+   .effects__item-title--before0::before {
+      width: 53px;
+      height: 50px;
+      content: "";
+      margin-right: 15px;
+   }
+   .effects__item-title--before1::before {
+      background-image: url("../img/clients/effects1.svg");
+   }
+   .effects__item-title--before2::before {
+      background-image: url("../img/clients/effects2.svg");
+   }
+   .effects__item-title--before3::before {
+      background-image: url("../img/clients/effects3.svg");
+   }
+   .effects__item-desc {
+      max-width: 540px;
+      font-size: 16px;
+      line-height: 28px;
+      margin-bottom: 24px;
+   }
+}
+
+@media screen and (min-width: 720px) {
+   .effects__item {
+      padding: 0 10%;
+   }
+}
+
+@media screen and (min-width: 990px) {
+   .effects__title {
+      font-size: 34px;
+      margin-bottom: 60px;
+   }
+   .effects__item {
+      padding: 0 3%;
+   }
+}
+
+
+/* --------Ask-section--------- */
+
+
+@media screen and (min-width: 320px) {
+   .ask__inner {
+      padding: 50px 0;
+   }
+   .ask__title {
+      font-size: 34px;
+      margin-bottom: 16px;
+   }
+   .ask__desc {
+      font-size: 18px;
+      line-height: 27px;
+      margin-bottom: 30px;
+   }
+   .ask__list {
+      text-align: start;
+   }
+   .ask__item {
+      max-width: 920px;
+      margin: 0 auto;
+      margin-bottom: 16px;
+      border-bottom: 1px solid #E7E7E7;
+   }
+   .ask__item-title {
+      font-weight: 500;
+      font-size: 18px;
+      margin-bottom: 22px;
+      margin-left: 16px;
+   }
+   .ask__item-title--before::before {
+      position: relative;
+      right: 16px;
+      width: 24px;
+      height: 24px;
+      content: "";
+      background-image: url("../img/clients/plus.svg");
+   }
+   .ask__item-title--before2::before {
+      background-image: url("../img/clients/minus.svg");
+   }
+   .ask__item-desc {
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 24px;
+   }
+}
